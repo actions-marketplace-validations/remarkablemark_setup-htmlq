@@ -1,6 +1,9 @@
 import os from 'os';
+import path from 'path';
 
 const platform = {
+  darwin: 'darwin',
+  linux: 'linux',
   win32: 'windows',
 } as const;
 
@@ -13,25 +16,34 @@ const platform = {
  * @returns - Return value in [darwin, linux, windows]
  */
 function getOS(os: NodeJS.Platform) {
-  return platform[os as keyof typeof platform] || os;
+  return platform[os as keyof typeof platform];
 }
 
 /**
- * Gets download object.
+ * Gets download URL.
  *
  * @see {@link https://github.com/mgdm/htmlq/releases}
  *
  * @param version - CLI version
- * @returns - URL and binary path
+ * @param name - CLI name
+ * @returns - Download URL
  */
-export function getDownloadObject(version: string) {
+export function getDownloadUrl(version: string) {
   const platform = os.platform();
 
   const filename = `htmlq-x86_64-${getOS(platform)}`;
   const extension = platform === 'win32' ? 'zip' : 'tar.gz';
 
-  return {
-    binPath: filename,
-    url: `https://github.com/mgdm/htmlq/releases/download/v${version}/${filename}.${extension}`,
-  };
+  return `https://github.com/mgdm/htmlq/releases/download/v${version}/${filename}.${extension}`;
+}
+
+/**
+ * Gets CLI path.
+ *
+ * @param directory - Directory
+ * @param name - CLI name
+ * @returns - Binary path
+ */
+export function getBinaryPath(directory: string, name: string) {
+  return path.join(directory, name + (os.platform() === 'win32' ? '.exe' : ''));
 }

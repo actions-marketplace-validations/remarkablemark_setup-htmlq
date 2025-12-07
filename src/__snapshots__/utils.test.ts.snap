@@ -1,22 +1,13 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
-exports[`when OS is "darwin" gets download object 1`] = `
-{
-  "binPath": "htmlq-x86_64-darwin",
-  "url": "https://github.com/mgdm/htmlq/releases/download/v0.4.0/htmlq-x86_64-darwin.tar.gz",
-}
-`;
+exports[`getBinaryPath when OS is "darwin" returns CLI filepath 1`] = `"directory/name"`;
 
-exports[`when OS is "linux" gets download object 1`] = `
-{
-  "binPath": "htmlq-x86_64-linux",
-  "url": "https://github.com/mgdm/htmlq/releases/download/v0.4.0/htmlq-x86_64-linux.tar.gz",
-}
-`;
+exports[`getBinaryPath when OS is "linux" returns CLI filepath 1`] = `"directory/name"`;
 
-exports[`when OS is "win32" gets download object 1`] = `
-{
-  "binPath": "htmlq-x86_64-windows",
-  "url": "https://github.com/mgdm/htmlq/releases/download/v0.4.0/htmlq-x86_64-windows.zip",
-}
-`;
+exports[`getBinaryPath when OS is "win32" returns CLI filepath 1`] = `"directory/name.exe"`;
+
+exports[`getDownloadUrl when OS is "darwin" gets download object 1`] = `"https://github.com/mgdm/htmlq/releases/download/v0.4.0/htmlq-x86_64-darwin.tar.gz"`;
+
+exports[`getDownloadUrl when OS is "linux" gets download object 1`] = `"https://github.com/mgdm/htmlq/releases/download/v0.4.0/htmlq-x86_64-linux.tar.gz"`;
+
+exports[`getDownloadUrl when OS is "win32" gets download object 1`] = `"https://github.com/mgdm/htmlq/releases/download/v0.4.0/htmlq-x86_64-windows.zip"`;

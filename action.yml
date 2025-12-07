@@ -6,8 +6,12 @@ inputs:
     description: htmlq version
     required: false
     default: 0.4.0
+  cli-name:
+    description: htmlq CLI name
+    required: false
+    default: htmlq
 runs:
-  using: node16
+  using: node24
   main: dist/index.js
 branding:
   icon: search
