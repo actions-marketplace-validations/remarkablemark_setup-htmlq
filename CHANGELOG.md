@@ -1,5 +1,35 @@
 # Changelog
 
+## [3.0.7](https://github.com/remarkablemark/setup-htmlq/compare/v3.0.6...v3.0.7) (2026-06-22)
+
+
+### Build System
+
+* **deps:** bump undici from 6.24.0 to 6.27.0 ([#930](https://github.com/remarkablemark/setup-htmlq/issues/930)) ([2fa6f96](https://github.com/remarkablemark/setup-htmlq/commit/2fa6f96425a9dd44bd479944cc41aca54510c2d4))
+
+## [3.0.6](https://github.com/remarkablemark/setup-htmlq/compare/v3.0.5...v3.0.6) (2026-04-23)
+
+
+### Build System
+
+* **deps:** bump @actions/core from 3.0.0 to 3.0.1 ([#885](https://github.com/remarkablemark/setup-htmlq/issues/885)) ([a804c48](https://github.com/remarkablemark/setup-htmlq/commit/a804c48ed7a51d12a05b48a980b944c824d689d2))
+
+## [3.0.5](https://github.com/remarkablemark/setup-htmlq/compare/v3.0.4...v3.0.5) (2026-03-14)
+
+
+### Build System
+
+* **deps:** bump undici from 6.23.0 to 6.24.0 ([#857](https://github.com/remarkablemark/setup-htmlq/issues/857)) ([4ccfb66](https://github.com/remarkablemark/setup-htmlq/commit/4ccfb6627b4b0d1a61e12b5896a8e122ef0f37ab))
+
+## [3.0.4](https://github.com/remarkablemark/setup-htmlq/compare/v3.0.3...v3.0.4) (2026-02-12)
+
+
+### Build System
+
+* **deps:** bump @actions/core from 2.0.3 to 3.0.0 ([a5c1986](https://github.com/remarkablemark/setup-htmlq/commit/a5c19869fbe112445baf5b86640a6b0469c89d97))
+* **deps:** bump @actions/exec from 2.0.0 to 3.0.0 ([5e66ce0](https://github.com/remarkablemark/setup-htmlq/commit/5e66ce07120b46e1cb075478fada7f6e416f4c23))
+* **deps:** bump @actions/tool-cache from 3.0.1 to 4.0.0 ([09e93b0](https://github.com/remarkablemark/setup-htmlq/commit/09e93b0903727ea841ab044910d30fb700879581))
+
 ## [3.0.3](https://github.com/remarkablemark/setup-htmlq/compare/v3.0.2...v3.0.3) (2026-01-28)
 
 
